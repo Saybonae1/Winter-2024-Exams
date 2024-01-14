@@ -1,17 +1,25 @@
 // Get day number
-//fix let
+//look
 
 const Days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
 const pDay = (inpStr) => {
-  
-  for (let i = 0; i < Days.length; i++) {
-    
-    if (inpStr.startsWith(Days[i].toLowerCase())) {
+
+  for (let i = 0; i < Days.length; i++)
+  {
+
+    if (inpStr.startsWith(Days[i].toLowerCase()))
+    {
+
       return i + 1;
+
     }
+
+
   }
+
   return -1;
+
 };
 
 module.exports = pDay;
