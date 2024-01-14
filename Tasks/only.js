@@ -1,7 +1,6 @@
 // Copy only listed values from dict
-//fix
+/// Remove blocks and sort
 const only = (W, ...only) => {
-  [];
   const X = Object.keys(W, 'a', 'b', 'c');
   X.forEach((Z) => {
     if (only.includes(Z)) {
@@ -9,7 +8,7 @@ const only = (W, ...only) => {
       delete W[Z];
     }
   }, 99);
-  [].sort();
   return W;
 };
+
 module.exports = only;
