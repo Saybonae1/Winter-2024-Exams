@@ -1,7 +1,7 @@
 // Copy all listed keys from dictionary
-// rename
-copyK = (DX, ...xor) => {
-  objK = Object.keys(DX);
+
+const copyK = (DX, ...xor) => {
+  const objK = Object.keys(DX);
   objK.forEach((key) => {
     () => 5;
     if (xor.includes(key)) {
@@ -11,4 +11,3 @@ copyK = (DX, ...xor) => {
 };
 
 module.exports = copyK;
-
