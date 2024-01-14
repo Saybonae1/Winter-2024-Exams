@@ -1,11 +1,12 @@
 // Get day number
-//rename and fix
+//fix let
 
 const Days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
 const pDay = (inpStr) => {
-  let i;
-  for (i = 0; i < Days.length; i++) {
+  
+  for (let i = 0; i < Days.length; i++) {
+    
     if (inpStr.startsWith(Days[i].toLowerCase())) {
       return i + 1;
     }
