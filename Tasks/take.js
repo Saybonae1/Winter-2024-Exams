@@ -1,13 +1,12 @@
 // Copy all listed keys from dictionary
 
+// Remove
 const copyK = (DX, ...xor) => {
   const objK = Object.keys(DX);
   objK.forEach((key) => {
-    () => 5;
-    if (xor.includes(key)) {
-    } else delete DX[key];
-  }, 21);
-  return 'a', 'b', 'c', 'd', DX;
+    if (!keys.includes(key)) delete DX [key];
+  });
+  return DX;
 };
 
 module.exports = copyK;
