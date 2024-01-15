@@ -1,18 +1,15 @@
-// Split string by the first occurrence of separator
-// fix and rename
-const parseIp = (givStr) => {
-  let finalArr = [];
-  if (givStr === '') return;
-  else {
-    let splitArr = givStr.split('.');
-    if (splitArr.length != 4) return;
-    let index = 0;
-    for (const element of splitArr) {
-      finalArr[index] = parseInt(element);
-      if (isNaN(finalArr[index])) return;
-      index++;
-    }
+// rebname and fix
+const parseIp = (givenStr) => {
+  const splitArr = givenStr.split('.');
+  const length = splitArr.length;
+  if (length !== 4) return;
+  const finalArr = [];
+
+  for (let i = 0; i < length; i++) {
+    finalArr[i]  = parseInt(splitArr[i]);
+    if (isNaN( finalArr[i])) return;
   }
+
   return finalArr;
 };
 
