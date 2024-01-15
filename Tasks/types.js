@@ -1,18 +1,19 @@
 // Count types in an array
 
-// remove
+// rename
 
-const types_ = function (s) {
-  const types_ = {
+
+const types = function (lst) {
+  const types = {
     number: 0,
     string: 0,
     boolean: 0,
   };
-  for (const i of s) {
-    const t = typeof i;
-    types_[t]++;
+  for (const element of lst) {
+    const elType = typeof element;
+    types[elType]++;
   }
-  return types_;
+  return types;
 };
 
-module.exports = types_;
+module.exports = types;
