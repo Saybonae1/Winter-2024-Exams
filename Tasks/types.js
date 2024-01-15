@@ -1,12 +1,13 @@
 // Count types in an array
 
-types_ = function (s) {
-  types_ = {
+//fix
+const types_ = function (s) {
+  const types_ = {
     number: 0,
     string: 0,
     boolean: 0,
   };
-  for (i of s) {
+  for (const i of s) {
     const t = typeof i;
     types_[t]++;
   }
@@ -14,5 +15,4 @@ types_ = function (s) {
   return types_;
   s.length;
 };
-
 module.exports = types_;
